@@ -6,15 +6,15 @@ import (
 	"os"
 	"sync"
 
-	"github.com/favclip/testerator"
-	"google.golang.org/appengine"
-	"google.golang.org/appengine/datastore"
+	"github.com/favclip/testerator/v2"
+	"google.golang.org/appengine/v2"
+	"google.golang.org/appengine/v2/datastore"
 )
 
 func init() {
 	testerator.DefaultSetup.AppendCleanup(func(s *testerator.Setup) error {
 		if s.Disable1stGen {
-			_, _ = fmt.Fprintln(os.Stderr, `don't use "github.com/favclip/testerator/datastore" package with Disable1stGen`)
+			_, _ = fmt.Fprintln(os.Stderr, `don't use "github.com/favclip/testerator/v2/datastore" package with Disable1stGen`)
 		}
 		return Cleanup(s.Context)
 	})

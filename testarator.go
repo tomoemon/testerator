@@ -5,8 +5,8 @@ import (
 	"os"
 	"sync"
 
-	"google.golang.org/appengine"
-	"google.golang.org/appengine/aetest"
+	"google.golang.org/appengine/v2"
+	"google.golang.org/appengine/v2/aetest"
 )
 
 // Helper uses for setup hooks to Setup struct.
@@ -66,7 +66,7 @@ func (s *Setup) SpinUp() error {
 
 	if s.ResetThreshold == 0 {
 		// NOTE
-		//   https://cloud.google.com/appengine/docs/standard/go/release-notes
+		//   https://cloud.google.com/appengine/v2/docs/standard/go/release-notes
 		//   August 9, 2017 Updated Go SDK to version 1.9.57.
 		//   The aetest package now reuses HTTP connections, fixing a bug that exhausted file descriptors when running tests.
 		s.ResetThreshold = 1000

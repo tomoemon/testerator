@@ -6,7 +6,7 @@ import (
 	"testing"
 
 	"cloud.google.com/go/datastore"
-	"github.com/favclip/testerator/clouddatastoreemulator"
+	"github.com/favclip/testerator/v2/clouddatastoreemulator"
 )
 
 // Sample entity.

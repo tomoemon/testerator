@@ -5,7 +5,7 @@ import (
 	"os"
 
 	clds "cloud.google.com/go/datastore"
-	"github.com/favclip/testerator"
+	"github.com/favclip/testerator/v2"
 	"golang.org/x/sync/errgroup"
 )
 

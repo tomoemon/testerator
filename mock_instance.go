@@ -4,7 +4,7 @@ import (
 	"io"
 	"net/http"
 
-	"google.golang.org/appengine/aetest"
+	"google.golang.org/appengine/v2/aetest"
 )
 
 var _ aetest.Instance = (*mockAEInstance)(nil)

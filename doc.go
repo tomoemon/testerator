@@ -45,9 +45,8 @@ If you want to clean up Datastore or Search API or Memcache, You should import a
 
 	import (
 		// do testerator feature setup
-		_ "github.com/favclip/testerator/datastore"
-		_ "github.com/favclip/testerator/search"
-		_ "github.com/favclip/testerator/memcache"
+		_ "github.com/favclip/testerator/v2/datastore"
+		_ "github.com/favclip/testerator/v2/memcache"
 	)
 
 */
